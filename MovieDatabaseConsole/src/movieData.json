@@ -1,0 +1,30 @@
+{
+  "vikram" : {
+    "movieName" : "vikram",
+    "actor" : "kamal",
+    "director" : "logesh",
+    "year" : 2022,
+    "genre" : "action"
+  },
+  "leo" : {
+    "movieName" : "leo",
+    "actor" : "vijay",
+    "director" : "logesh",
+    "year" : 2023,
+    "genre" : "action"
+  },
+  "3" : {
+    "movieName" : "3",
+    "actor" : "Dhanush",
+    "director" : "dhanush",
+    "year" : 2015,
+    "genre" : "love"
+  },
+  "master" : {
+    "movieName" : "master",
+    "actor" : "vijay",
+    "director" : "logesh",
+    "year" : 2022,
+    "genre" : "action"
+  }
+}
