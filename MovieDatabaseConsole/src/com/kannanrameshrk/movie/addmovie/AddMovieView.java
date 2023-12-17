@@ -1,4 +1,4 @@
-package com.kannanrameshrk.moview.addmovie;
+package com.kannanrameshrk.movie.addmovie;
 
 import java.util.Scanner;
 

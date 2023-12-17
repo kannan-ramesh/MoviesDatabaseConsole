@@ -2,7 +2,7 @@ package com.kannanrameshrk;
 
 import java.util.Scanner;
 
-import com.kannanrameshrk.moview.addmovie.AddMovieView;
+import com.kannanrameshrk.movie.addmovie.AddMovieView;
 import com.kannanrameshrk.user.searchmovie.SearchMovieView;
 
 public class Main {
