@@ -18,7 +18,6 @@ public class Main {
 			System.out.println("IMDB Application");
 			System.out.println("------------------");
 			System.out.println(" 1.Admin\n 2.User\n 3.Exit");
-			
 			System.out.println("Enter your option:");
 			Scanner input=new Scanner(System.in);
 			int choice=input.nextInt();
@@ -26,7 +25,7 @@ public class Main {
 			switch(choice) {
 			case 1:{
 				AddMovieView addmovieview=new  AddMovieView();
-				addmovieview.start();
+				addmovieview.start(input);
 				break;
 			}
 			case 2:{

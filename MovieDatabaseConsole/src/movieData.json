@@ -26,5 +26,12 @@
     "director" : "logesh",
     "year" : 2022,
     "genre" : "action"
+  },
+  "kanna" : {
+    "movieName" : "kanna",
+    "actor" : "kanna",
+    "director" : "kanna",
+    "year" : 2010,
+    "genre" : "love"
   }
 }

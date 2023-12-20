@@ -12,7 +12,7 @@ import com.kannanrameshrk.movie.dto.Movie;
 
 public class MovieRepository {
 	private static  MovieRepository repository;
-	 private static final String FILE_PATH = "C:\\Users\\kanna\\eclipse-workspace\\webapp\\MovieDatabaseConsole\\src\\movieData.json";
+	 private static final String FILE_PATH = "C:\\Users\\kanna\\git\\MoviesDatabaseConsole\\MovieDatabaseConsole\\src\\movieData.json";
 	 private Map<String, Movie> movies;
 	 
 	private MovieRepository() {
@@ -38,7 +38,6 @@ public class MovieRepository {
 	                movies = mapper.readValue(file, new TypeReference<Map<String, Movie>>() {});
 	                movies.put(movie.getMovieName(), movie);
 	            }
-
 	            mapper.writeValue(file, movies);
 	            return true;
 	        } catch (IOException e) {
@@ -48,6 +47,23 @@ public class MovieRepository {
 	}
 
 	public Movie searchMovieName(String searchMovie) {
-		return movies.get(searchMovie);
+		 ObjectMapper mapper = new ObjectMapper();
+	        File file = new File(FILE_PATH);
+
+	        try {
+	        	Map<String, Movie> movieMap = mapper.readValue(
+	        		    file,
+	        		    new TypeReference<Map<String, Movie>>() {}
+	        		);
+
+	            if (movieMap.containsKey(searchMovie)) {
+	                return movieMap.get(searchMovie);
+	            } else {
+	                return null;
+	            }
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	            return null;
+	        }
 	}
 }
